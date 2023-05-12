@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Email.Microservice/ConsoleApp1/bin/Debug/net6.0
+/Email.Microservice/ConsoleApp1/obj
+/Microservice.WebApi-master-master/Customer.Microservice/bin/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/Gateway.WebApi/bin/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/Product.Microservice/bin/Debug/netcoreapp3.1
