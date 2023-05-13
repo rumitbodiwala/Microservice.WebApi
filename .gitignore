@@ -2,12 +2,14 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Email.Microservice/ConsoleApp1/bin/Debug/net6.0
+/Email.Microservice/ConsoleApp1/bin
 /Email.Microservice/ConsoleApp1/obj
-/Microservice.WebApi-master-master/Customer.Microservice/bin/Debug/netcoreapp3.1
-/Microservice.WebApi-master-master/Gateway.WebApi/bin/Debug/netcoreapp3.1
-/Microservice.WebApi-master-master/Product.Microservice/bin/Debug/netcoreapp3.1
-/Microservice.WebApi-master-master/Ordering.Microservice/bin/Debug/netcoreapp3.1
-/Microservice.WebApi-master-master/RabbitMQContract/bin/Debug/netcoreapp3.1
-/Microservice.WebApi-master-master/RabbitMQContract/obj/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/Customer.Microservice/bin
+/Microservice.WebApi-master-master/Customer.Microservice/obj
+/Microservice.WebApi-master-master/Gateway.WebApi/bin
+/Microservice.WebApi-master-master/Gateway.WebApi/obj
+/Microservice.WebApi-master-master/Product.Microservice/bin
+/Microservice.WebApi-master-master/Product.Microservice/obj
+/Microservice.WebApi-master-master/RabbitMQContract/bin
 /Microservice.WebApi-master-master/RabbitMQContract/obj
+/Microservice.WebApi-master-master/.vs/Microservice.WebApi/FileContentIndex
