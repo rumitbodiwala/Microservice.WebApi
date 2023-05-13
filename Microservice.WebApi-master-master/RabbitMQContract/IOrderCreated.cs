@@ -1,4 +1,4 @@
-﻿namespace Ordering.Microservice.Entities
+﻿namespace RabbitMQContract
 {
     public interface IOrderCreated
     {
