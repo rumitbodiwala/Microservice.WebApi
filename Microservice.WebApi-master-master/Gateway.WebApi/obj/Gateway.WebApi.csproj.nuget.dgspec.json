@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Ayushi\\Learn projects\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj": {}
+    "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj": {}
   },
   "projects": {
-    "F:\\Ayushi\\Learn projects\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj": {
+    "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Ayushi\\Learn projects\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj",
+        "projectUniqueName": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj",
         "projectName": "Gateway.WebApi",
-        "projectPath": "F:\\Ayushi\\Learn projects\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj",
-        "packagesPath": "C:\\Users\\TGSUser162\\.nuget\\packages\\",
-        "outputPath": "F:\\Ayushi\\Learn projects\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\obj\\",
+        "projectPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\Gateway.WebApi.csproj",
+        "packagesPath": "C:\\Users\\TGSUser219\\.nuget\\packages\\",
+        "outputPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Gateway.WebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser162\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TGSUser219\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +24,6 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-CoreLibrary/nuget/v3/index.json": {},
-          "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-DBLibrary/nuget/v3/index.json": {},
           "https://calcuquote.pkgs.visualstudio.com/_packaging/CQ.Library%40Local/nuget/v3/index.json": {}
         },
         "frameworks": {
@@ -57,17 +53,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.32, 3.1.32]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -76,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
