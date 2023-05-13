@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Gateway.WebApi\Gateway.WebApi.csproj", "{344168F9-2C61-4B23-A098-92A58D451369}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{C14666A9-184B-46DD-B32F-30D9A69E4FA1}"
+	ProjectSection(SolutionItems) = preProject
+		RabbitMQContract\RabbitMQContract.csproj = RabbitMQContract\RabbitMQContract.csproj
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email.Microservice", "..\Email.Microservice\ConsoleApp1\Email.Microservice.csproj", "{3B51992B-1098-46F4-BF82-5C99AE9A8E3E}"
 EndProject
