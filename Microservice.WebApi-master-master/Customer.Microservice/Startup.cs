@@ -44,6 +44,16 @@ namespace Customer.Microservice
                 });
             });
             #endregion
+
+
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
+
             services.AddControllers();
         }
 

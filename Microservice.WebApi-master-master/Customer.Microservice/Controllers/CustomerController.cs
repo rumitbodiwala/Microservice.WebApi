@@ -56,10 +56,11 @@ namespace Customer.Microservice.Controllers
             if (customer == null) return NotFound();
             else
             {
-                customer.City = customerData.City;
+                customer.UserName = customerData.UserName;
                 customer.Name = customerData.Name;
-                customer.Contact = customerData.Contact;
+                customer.Mobile = customerData.Mobile;
                 customer.Email = customerData.Email;
+                customer.Password = customerData.Password;
                 await _context.SaveChanges();
                 return Ok(customer.Id);
             }
