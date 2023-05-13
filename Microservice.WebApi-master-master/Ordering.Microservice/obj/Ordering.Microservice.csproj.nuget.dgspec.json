@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj": {}
+    "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj": {}
   },
   "projects": {
-    "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj": {
+    "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj",
+        "projectUniqueName": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj",
         "projectName": "Ordering.Microservice",
-        "projectPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj",
-        "packagesPath": "C:\\Users\\TGSUser219\\.nuget\\packages\\",
-        "outputPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\obj\\",
+        "projectPath": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\Ordering.Microservice.csproj",
+        "packagesPath": "C:\\Users\\TGSUser220\\.nuget\\packages\\",
+        "outputPath": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\Ordering.Microservice\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser219\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TGSUser220\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,16 +25,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-CoreLibrary/nuget/v3/index.json": {},
-          "https://calcuquote.pkgs.visualstudio.com/_packaging/CQ.Library%40Local/nuget/v3/index.json": {}
+          "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-DBLibrary/nuget/v3/index.json": {},
+          "https://calcuquote.pkgs.visualstudio.com/_packaging/CQ.Library/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj": {
-                "projectPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj"
+              "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj": {
+                "projectPath": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj"
               }
             }
           }
@@ -97,10 +100,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.30, 3.1.30]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -109,21 +119,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj": {
+    "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj",
+        "projectUniqueName": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj",
         "projectName": "RabbitMQContract",
-        "projectPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj",
-        "packagesPath": "C:\\Users\\TGSUser219\\.nuget\\packages\\",
-        "outputPath": "D:\\Dhruvesh\\Demo Projects\\Hackathon\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\obj\\",
+        "projectPath": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\RabbitMQContract.csproj",
+        "packagesPath": "C:\\Users\\TGSUser220\\.nuget\\packages\\",
+        "outputPath": "D:\\TeamE\\Microservice.WebApi\\Microservice.WebApi-master-master\\RabbitMQContract\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser219\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TGSUser220\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,9 +144,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-CoreLibrary/nuget/v3/index.json": {},
-          "https://calcuquote.pkgs.visualstudio.com/_packaging/CQ.Library%40Local/nuget/v3/index.json": {}
+          "https://calcuquote.pkgs.visualstudio.com/CalcuQuote/_packaging/CQ-DBLibrary/nuget/v3/index.json": {},
+          "https://calcuquote.pkgs.visualstudio.com/_packaging/CQ.Library/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -156,7 +169,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -165,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
