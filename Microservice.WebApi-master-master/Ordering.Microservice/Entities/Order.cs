@@ -11,7 +11,7 @@ namespace Ordering.Microservice.Entities
         }
         public int Id { get; set; }
 
-        public DateTime OrderDate { get; set; }
+        public DateTime OrderDate { get; set; } = new DateTime();
 
         public string Username { get; set; }
 
