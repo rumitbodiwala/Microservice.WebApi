@@ -1,8 +1,11 @@
 ﻿using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Ordering.Microservice.Data;
 using Ordering.Microservice.Entities;
+using RabbitMQContract;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using VM = Ordering.Microservice.Entities;
@@ -17,13 +20,14 @@ namespace Ordering.Microservice.Controllers
     {
         private IApplicationDbContext _context;
         private readonly IBus _orderBus;
-        public OrderController(IApplicationDbContext context, IBus orderBus)
+        private readonly IServiceProvider _serviceProvider;
+        public OrderController(IApplicationDbContext context, IServiceProvider serviceProvider)
         {
             _context = context;
-            _orderBus = orderBus;
+            _serviceProvider = serviceProvider;
         }
 
-        [HttpGet("{userName}", Name = "GetOrder")]
+        [HttpGet("GetOrder")]
         public async Task<IActionResult> GetOrdersByUserNameAsync(string userName)
         {
             var order = await _context.Orders.Where(a => a.Username == userName).FirstOrDefaultAsync();
@@ -36,12 +40,12 @@ namespace Ordering.Microservice.Controllers
         {
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-
-            await _orderBus.Publish<IOrderCreated>(new
-            {
-                OrderId = order.Id,
-                Username = order.Username
-            });
+            //var _emailBus = _serviceProvider.GetRequiredService<IEmailServiceBus>();
+            //await _emailBus.Publish<IOrderCreated>(new
+            //{
+            //    OrderId = order.Id,
+            //    Username = order.Username
+            //});
 
             return Ok(order.Id);
         }

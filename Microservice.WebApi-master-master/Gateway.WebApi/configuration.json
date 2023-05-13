@@ -49,24 +49,24 @@
       "UpstreamHttpMethod": [ "GET", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api//Order/{userName}",
+      "DownstreamPathTemplate": "/api/Order/GetOrder",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 44316
         }
       ],
-      "UpstreamPathTemplate": "/gateway/order/{userName}",
+      "UpstreamPathTemplate": "/gateway/order/GetOrder",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api//Order/CreateOrder",
+      "DownstreamPathTemplate": "/api/Order/CreateOrder",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 44316
         }
       ],
       "UpstreamPathTemplate": "/gateway/order/create",

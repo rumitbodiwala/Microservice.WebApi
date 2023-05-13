@@ -17,4 +17,8 @@
     <PackageReference Include="Quartz" Version="3.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microservice.WebApi-master-master\RabbitMQContract\RabbitMQContract.csproj" />
+  </ItemGroup>
+
 </Project>

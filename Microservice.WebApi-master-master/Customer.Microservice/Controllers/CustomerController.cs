@@ -67,16 +67,16 @@ namespace Customer.Microservice.Controllers
                 return Ok(customer.Id);
             }
         }
-        [HttpPost]
-        public async Task<IActionResult> CustomerLogin(CustomerLogin request)
-        {
-            string pwd = Helper.EncryptTax(request.Password);
-            var customer = await _context.Customers.FirstOrDefaultAsync(a => a.Email == request.Email && a.Password == pwd);
-            if (customer == null)
-            {
-                return NotFound();
-            }
-            return Ok(customer.Id);
-        }
+        //[HttpPost]
+        //public async Task<IActionResult> CustomerLogin(CustomerLogin request)
+        //{
+        //    string pwd = Helper.EncryptTax(request.Password);
+        //    var customer = await _context.Customers.FirstOrDefaultAsync(a => a.Email == request.Email && a.Password == pwd);
+        //    if (customer == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(customer.Id);
+        //}
     }
 }

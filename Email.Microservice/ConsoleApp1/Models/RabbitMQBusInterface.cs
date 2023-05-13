@@ -1,8 +1,8 @@
-﻿using MassTransit;
+﻿//using MassTransit;
 
-namespace Email.Microservice.Models
-{
-    public interface IEmailServiceBus : IBus
-    {
-    }
-}
+//namespace Email.Microservice.Models
+//{
+//    public interface IEmailServiceBus : IBus
+//    {
+//    }
+//}

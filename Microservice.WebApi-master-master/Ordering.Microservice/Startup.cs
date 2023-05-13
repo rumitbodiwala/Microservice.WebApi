@@ -31,20 +31,19 @@ namespace Ordering.Microservice
                   b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
             services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
 
-            services.AddSwaggerGen(c =>
-            {
-                c.IncludeXmlComments(string.Format(@"{0}\Customer.Microservice.xml", System.AppDomain.CurrentDomain.BaseDirectory));
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Customer Microservice API",
-                });
-            });
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.IncludeXmlComments(string.Format(@"{0}\Customer.Microservice.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+            //    c.SwaggerDoc("v1", new OpenApiInfo
+            //    {
+            //        Version = "v1",
+            //        Title = "Customer Microservice API",
+            //    });
+            //});
 
             #region RabbitMQConfiguration
 
             AddRabbitMQConfiguration(services);
-
             #endregion
 
             services.AddControllers();
@@ -63,11 +62,11 @@ namespace Ordering.Microservice
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer.Microservice");
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer.Microservice");
+            //});
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -88,18 +87,30 @@ namespace Ordering.Microservice
 
             //var decryptRabbitMqPassword = EncryptDecrypt.AES_Decrypt(rabbitMqPassword);
 
-            services.AddMassTransit(x =>
-            {
-                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
-                {
-                    config.Host(new Uri(portCQRabbitMQHost), h =>
-                    {
-                        h.Username(rabbitMqUserName);
-                        h.Password(rabbitMqPassword);
-                    });
-                }));
-            });
-            services.AddMassTransitHostedService();
+            //services.AddMassTransit(x =>
+            //{
+            //    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
+            //    {
+            //        config.Host(new Uri(portCQRabbitMQHost), h =>
+            //        {
+            //            h.Username(rabbitMqUserName);
+            //            h.Password(rabbitMqPassword);
+            //        });
+            //    }));
+            //});
+           //  services.AddMassTransit<IEmailServiceBus>(x =>
+           //{
+           //    x.AddBus(context => Bus.Factory.CreateUsingRabbitMq(cfg =>
+           //    {
+           //        cfg.Host(new Uri("rabbitmq://localhost/Email_Microservice"), h =>
+           //        {
+           //            h.Username("guest");
+           //            h.Password("guest");
+           //        });
+           //        cfg.ConfigureEndpoints(context);
+           //    }));
+           //});
+           // services.AddMassTransitHostedService();
         }
         #endregion
     }

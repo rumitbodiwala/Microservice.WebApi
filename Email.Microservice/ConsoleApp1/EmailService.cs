@@ -22,10 +22,10 @@ namespace Email.Microservice
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             var _emailBus = _serviceProvider.GetRequiredService<IEmailServiceBus>();
-            //await _emailBus.Publish<ITestModel>(new
-            //{
-            //    Message = "Test Model"
-            //});
+            await _emailBus.Publish<ITestModel>(new
+            {
+                Message = "Test Model"
+            });
 
             await _emailBus.Publish<IOrderCreated>(new
             {

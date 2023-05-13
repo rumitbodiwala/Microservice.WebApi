@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Microservice.Data;
 using Ordering.Microservice.Entities;
+using RabbitMQContract;
 using System.Linq;
 using System.Threading.Tasks;
 using VM = Ordering.Microservice.Entities;
