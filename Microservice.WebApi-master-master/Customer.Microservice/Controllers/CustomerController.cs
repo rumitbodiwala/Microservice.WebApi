@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Customer.Microservice.Data;
+using Customer.Microservice.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace Customer.Microservice.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Entities.Customer customer)
         {
+            customer.Password = Helper.EncryptTax(customer.Password);
             _context.Customers.Add(customer);
             await _context.SaveChanges();
             return Ok(customer.Id);
@@ -64,6 +66,17 @@ namespace Customer.Microservice.Controllers
                 await _context.SaveChanges();
                 return Ok(customer.Id);
             }
+        }
+        [HttpPost]
+        public async Task<IActionResult> CustomerLogin(CustomerLogin request)
+        {
+            string pwd = Helper.EncryptTax(request.Password);
+            var customer = await _context.Customers.FirstOrDefaultAsync(a => a.Email == request.Email && a.Password == pwd);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return Ok(customer.Id);
         }
     }
 }
