@@ -1,8 +1,11 @@
 ﻿using Email.Microservice.Job;
 using Email.Microservice.Models;
+using Email.Microservice.Services;
+using MassTransit.Transports;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quartz;
+using RabbitMQContract;
 
 namespace Email.Microservice
 {
@@ -19,12 +22,22 @@ namespace Email.Microservice
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             var _emailBus = _serviceProvider.GetRequiredService<IEmailServiceBus>();
-            await _emailBus.Publish<ITestModel>(new
+            //await _emailBus.Publish<ITestModel>(new
+            //{
+            //    Message = "Test Model"
+            //});
+
+            await _emailBus.Publish<IOrderCreated>(new
             {
-                Message = "Test Model"
+                OrderId = 1,
+                Username = "Test"
             });
 
+            //SendEmail sendEmail = new SendEmail();
+            //sendEmail.SendEmails();
+
             QuartzServicesUtilities.StartJob<EmailSendJob>(_scheduler, 17, 15);
+
         }
 
         public async Task StopAsync(CancellationToken cancellationToken)

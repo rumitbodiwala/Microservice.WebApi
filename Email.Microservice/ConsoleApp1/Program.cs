@@ -29,6 +29,7 @@ try
        services.AddMassTransit(x =>
        {
            x.AddConsumer<TestConsumer>();
+           x.AddConsumer<OrderCreateConsumer>();
 
            x.UsingRabbitMq((context, cfg) =>
            {
@@ -45,6 +46,13 @@ try
                    e.PrefetchCount = 1;
                    e.ConcurrentMessageLimit = 2;
                    e.ConfigureConsumer<TestConsumer>(context);
+               });
+               
+               cfg.ReceiveEndpoint("OrderCreateConsumer", e =>
+               {
+                   e.PrefetchCount = 1;
+                   e.ConcurrentMessageLimit = 2;
+                   e.ConfigureConsumer<OrderCreateConsumer>(context);
                });
 
                cfg.ConfigureEndpoints(context);
