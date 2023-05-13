@@ -7,3 +7,7 @@
 /Microservice.WebApi-master-master/Customer.Microservice/bin/Debug/netcoreapp3.1
 /Microservice.WebApi-master-master/Gateway.WebApi/bin/Debug/netcoreapp3.1
 /Microservice.WebApi-master-master/Product.Microservice/bin/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/Ordering.Microservice/bin/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/RabbitMQContract/bin/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/RabbitMQContract/obj/Debug/netcoreapp3.1
+/Microservice.WebApi-master-master/RabbitMQContract/obj

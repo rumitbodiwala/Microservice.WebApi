@@ -10,13 +10,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Gateway.WebApi\Gateway.WebApi.csproj", "{344168F9-2C61-4B23-A098-92A58D451369}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{C14666A9-184B-46DD-B32F-30D9A69E4FA1}"
-	ProjectSection(SolutionItems) = preProject
-		RabbitMQContract\RabbitMQContract.csproj = RabbitMQContract\RabbitMQContract.csproj
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email.Microservice", "..\Email.Microservice\ConsoleApp1\Email.Microservice.csproj", "{3B51992B-1098-46F4-BF82-5C99AE9A8E3E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Microservice", "Ordering.Microservice\Ordering.Microservice.csproj", "{0EBC378F-24E5-4CF1-8D5D-943027701527}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQContract", "RabbitMQContract\RabbitMQContract.csproj", "{37009E8C-32CD-4BE0-8084-1F7473204526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +43,10 @@ Global
 		{0EBC378F-24E5-4CF1-8D5D-943027701527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBC378F-24E5-4CF1-8D5D-943027701527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBC378F-24E5-4CF1-8D5D-943027701527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37009E8C-32CD-4BE0-8084-1F7473204526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37009E8C-32CD-4BE0-8084-1F7473204526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37009E8C-32CD-4BE0-8084-1F7473204526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37009E8C-32CD-4BE0-8084-1F7473204526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +56,7 @@ Global
 		{FC9DFF99-990D-4FCD-8DBE-755014666B98} = {C14666A9-184B-46DD-B32F-30D9A69E4FA1}
 		{3B51992B-1098-46F4-BF82-5C99AE9A8E3E} = {C14666A9-184B-46DD-B32F-30D9A69E4FA1}
 		{0EBC378F-24E5-4CF1-8D5D-943027701527} = {C14666A9-184B-46DD-B32F-30D9A69E4FA1}
+		{37009E8C-32CD-4BE0-8084-1F7473204526} = {C14666A9-184B-46DD-B32F-30D9A69E4FA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01E9333D-C860-4DAE-93B3-911359E3738A}
