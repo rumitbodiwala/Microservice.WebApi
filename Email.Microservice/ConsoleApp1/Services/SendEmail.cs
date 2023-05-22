@@ -13,8 +13,8 @@ namespace Email.Microservice.Services
             {
                 var htmlString = "<h1>This is a test mail</h1>";
                 MailMessage message = new MailMessage();
-                message.From = new MailAddress("dhaval4triveni@gmail.com");
-                message.To.Add(new MailAddress("dhaval4triveni@gmail.com"));
+                message.From = new MailAddress("");
+                message.To.Add(new MailAddress(""));
                 message.Subject = "Test";
                 message.IsBodyHtml = true; //to make message body as html
                 message.Body = htmlString;
@@ -22,7 +22,7 @@ namespace Email.Microservice.Services
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("dhruvesh@calcuquote.com", "hnbosmcwalszotnz");
+                smtp.Credentials = new NetworkCredential("", "");
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(message);
             }
